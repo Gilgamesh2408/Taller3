@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <div class="row vh-100 justify-content-center align-items-center">
-            <div class="col-auto bg-light p-5">
-                <h1 id="titulo">Registro</h1>
-                <div class="registro">
-                    
-                    <form class="form-horizontal" action="/formulario" method="post">
-                        <fieldset>
-                            
-                        
-                        <label class="form-label" for="Id">Id</label><br>
-                        <input class="form-control" type="text" id="Id" name="Id"/><br>
-                        
-
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="pais">Seleccione el pais</label><br>
-                        
-                            <select class="form-select" id="pais" nombre="pais">
+    <body>
+        <div class="container">
+            <div class="row vh-100 justify-content-center align-items-center">
+                <div class="col-md-6 bg-light p-5">
+                    <h1 class="mb-4">Registro</h1>
+                    <form action="/formulario" method="post">
+                        <div class="mb-3">
+                            <label for="Id" class="form-label">Id</label>
+                            <input type="text" class="form-control" id="Id" name="Id">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">Seleccione el país</label>
+                            <select class="form-select" id="pais" name="pais">
                                 <option value="AF">Afganistán</option>
                                 <option value="AL">Albania</option>
                                 <option value="DE">Alemania</option>
@@ -258,52 +253,44 @@
                                 <option value="YU">Yugoslavia</option>
                                 <option value="ZM">Zambia</option>
                                 <option value="ZW">Zimbabue</option>
-                                </select>
+                            </select>
                         </div>
-                            <br>
-                            <label class="form-label" for="nombre">Nombre</label>
-                            <br>
-                            <input class="form-control" type="text" id="nombre" name="nombre"/>
-                            <br>
-                            <label class="form-label" for="apellidos">Apellidos</label>
-                            <br>
-                            <input class="form-control" type="text" id="apellidos" name="apellidos"/>
-                            <br>
-                    
-                            <label class="form-label">Direccion</label>
-                            <br>
-                            <input class="form-control" type="text" id="direccion" name="direccion"/>
-                            <br>
-                    
-                            <label class="form-label">Usuario</label>
-                            <br>
-                            <input class="form-control" type="text" id="usuario" name="usuario"/>
-                            <br>
-                    
-                            <label class="form-label">Contrasenia</label>
-                            <br>
-                            <input class="form-control" type="password" id="contraseña" name="contraseña"/>
-                            <br>
-                    
-                            <label class="form-label">E-mail</label>
-                            <br>
-                            <input class="form-control" type="email" id="email" name="email"/>
-                            <br>
-                    
-                            <label class="form-label">Telefono</label>
-                            <br>
-                            <input class="form-control" type="text" id="telefono" name="telefono"/>
-                            <br>
-                            <button type="submit" class="btn btn-secondary btn-lg">Guardar</button>
-                        </fieldset><br>
-                    
-                    
-                </form>
-
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" name="apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion">
+                        </div>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="usuario" name="usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+                    </form>
                 </div>
-
             </div>
-    </div>
-</div>
+        </div>
+    
+        <!-- Agrega los scripts de Bootstrap (jQuery y Popper.js) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
